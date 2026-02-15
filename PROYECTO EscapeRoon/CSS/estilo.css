@@ -5,7 +5,7 @@ body {
 
 
 .portada {
-    background: linear-gradient(#001f3f, #0077cc);
+    background: linear-gradient(#a0cded, #d5edfc);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -47,4 +47,34 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
     text-align: center;
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+@-webkit-keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+@-ms-keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+@-moz-keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+#animate-area	{ 
+	width: 1920px; 
+	height: 1080px; 
+	background-image: url(../IMG/nubes3.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+    background-size: 1920px 1080px;
+	animation: animatedBackground 40s linear infinite;
+	-ms-animation: animatedBackground 40s linear infinite;
+	-moz-animation: animatedBackground 40s linear infinite;
+	-webkit-animation: animatedBackground 40s linear infinite;
+    animation-duration: 10000ms;
 }
