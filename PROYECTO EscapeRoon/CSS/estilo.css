@@ -19,7 +19,8 @@ body {
     background: rgba(0,0,0,0.4);
     padding: 30px;
     border-radius: 15px;
-    margin: 400px;
+    margin-top: 15%;
+    margin-left: 35%;
 }
 
 .warning {
@@ -67,15 +68,15 @@ button:hover {
 	to { background-position: 100% 0; }
 }
 #animate-area	{ 
-	width: 1920px; 
-	height: 1080px; 
+	width: 150%; 
+	height: 100%; 
 	background-image: url(../IMG/nubes3.png);
 	background-position: 0px 0px;
 	background-repeat: repeat-x;
-    background-size: 1920px 1080px;
+    background-size: 150% contain;
 	animation: animatedBackground 40s linear infinite;
 	-ms-animation: animatedBackground 40s linear infinite;
 	-moz-animation: animatedBackground 40s linear infinite;
 	-webkit-animation: animatedBackground 40s linear infinite;
-    animation-duration: 10000ms;
+    animation-duration: 15000ms;
 }
