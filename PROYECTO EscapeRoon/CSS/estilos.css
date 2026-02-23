@@ -89,6 +89,15 @@ button:hover {
     
     margin-top: 10px; 
 }
+.intro {
+    text-align: center;
+    max-width: 600px;
+    background: rgba(0,0,0,0.4);
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 15%;
+    margin-left: 35%;
+}
 .img1 {
     width: 850px; 
     display: block;
