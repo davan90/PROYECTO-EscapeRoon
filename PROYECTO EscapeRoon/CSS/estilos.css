@@ -257,14 +257,26 @@ footer {
 }
 
 /*estilos para escena 2.3*/
+.Escena2-3 {
+    margin-left: 3%; 
+    width: 57%; 
+    background-color: white;
+    color: #333;
+    padding: 35px 20px; 
+    box-sizing: border-box; 
+    text-align: center;
+    font-size: 1.1rem; 
+    border-radius: 0 0 15px 15px; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
 .cockpit { width: 40%;
     height: 80vh;
     margin-top: 2%;
-    margin-bottom: 2%;
     margin-left: 32%;
     text-align: center; 
     background-image: url(../IMG/CabinaAvion.png);
     background-size: 100% 100%;
+    border-radius: 15px 15px 0 0;
 }
 .panel1 {
     margin-left: 34.5%;
@@ -306,7 +318,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 10px;
+    font-size: 12px;
     font-style: oblique;
 }
 
