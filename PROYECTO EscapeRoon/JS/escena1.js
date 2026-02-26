@@ -1,4 +1,3 @@
-
 window.onload = function() {
     crearZonasClic();
 };
@@ -33,14 +32,12 @@ function crearZonasClic() {
         }
     ];
     
-   
     zonas.forEach(zona => {
         const div = document.createElement('div');
         div.id = zona.id;
         div.className = 'zona-clic'; 
         div.setAttribute('onclick', `mostrarPersonaje('${zona.personaje}')`);
         
-       
         div.style.top = zona.top;
         div.style.left = zona.left;
         div.style.width = zona.width;
@@ -51,7 +48,7 @@ function crearZonasClic() {
 }
 
 function mostrarPersonaje(personaje) {
-
+  
     document.getElementById('escena1').style.display = 'none';
     
     
@@ -60,15 +57,14 @@ function mostrarPersonaje(personaje) {
     });
     
     
-    document.getElementById(personaje).style.display = 'block';
 }
 
 function volver() {
-   
+    
     document.querySelectorAll('.personaje').forEach(p => {
         p.style.display = 'none';
     });
     
-
-    document.getElementById('escena1').style.display = 'block';
+    
+    document.getElementById('escena1').style.display = 'flex';
 }
