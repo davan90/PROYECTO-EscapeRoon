@@ -52,8 +52,8 @@ btnTren.addEventListener('click', () => {
         btnTren.classList.remove('on');
         btnTren.classList.add('off');
         btnTren.textContent = "UP";
-        ledTren.classList.remove('off');
-        ledTren.classList.add('on');
+        ledTren.classList.remove('on');
+        ledTren.classList.add('off');
     }
 });
 btnFlaps.addEventListener('click', () => {
