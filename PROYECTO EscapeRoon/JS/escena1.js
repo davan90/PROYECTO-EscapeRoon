@@ -111,3 +111,8 @@ let reloj = setInterval(function () {
         document.getElementById("contador").innerHTML = minutos + "m " + segundos + "s ";
     }
 }, 1000);
+
+function TiempoPersonajePiloto(){
+     window.location.href = "../HTML/Escena2-3.html";
+    } 
+
