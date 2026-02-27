@@ -1,18 +1,27 @@
-function toggleTexto(zona) {
+function mostrarPersonaje(personaje) {
 
-    const texto = zona.querySelector(".texto");
-    const estaVisible = texto.style.display === "block";
+
+    document.getElementById('escena1').style.display = 'none';
 
    
-    document.querySelectorAll(".texto").forEach(t => {
-        t.style.display = "none";
+    document.querySelectorAll('.personaje').forEach(p => {
+        p.style.display = 'none';
     });
 
-    if (!estaVisible) {
-        texto.style.display = "block";
-    }
+    
+    document.getElementById(personaje).style.display = 'flex';
 }
 
+function volver() {
+
+    
+    document.querySelectorAll('.personaje').forEach(p => {
+        p.style.display = 'none';
+    });
+
+    
+    document.getElementById('escena1').style.display = 'flex';
+}
 /*javascript escena 2-3*/
 
 const btnMotor = document.getElementById('btnMotor');
@@ -102,3 +111,8 @@ let reloj = setInterval(function () {
         document.getElementById("contador").innerHTML = minutos + "m " + segundos + "s ";
     }
 }, 1000);
+
+function TiempoPersonajePiloto(){
+     window.location.href = "../HTML/Escena2-3.html";
+    } 
+

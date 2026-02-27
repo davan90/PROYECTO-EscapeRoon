@@ -1,37 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Escape Room - Vuelo al Caribe</title>
     <link rel="stylesheet" href="../CSS/estilos.css">
-<script src="../JS/escena1.js"></script>
+    <script src="../JS/escena1.js" defer></script>
 </head>
-<body class="portada">
-<div id="animate-area">
-    <div class="escena">
-        <img src="../IMG/PasilloE2-1.png" class="imagen-escena">
- 
-    <div class="zona zona-lentes" onclick="toggleTexto(this)">
-        <div class="texto">
-            No soy un piloto
+<body>
+
+    <div id="animate-area">
+        <div class="escena" id="escena1">
+
+            <img src="../IMG/PasilloE2-1.png" usemap="#personajes-map" class="imagen-escena">
+
+            <map name="personajes-map">
+
+                <area  coords="979,485,855,315" shape="rect" onclick="mostrarPersonaje('Isma')">
+
+                <area  coords="496,401,372,231" shape="rect" onclick="mostrarPersonaje('Raul')">
+
+                <area coords="368,517,203,340"  shape="rect"  onclick="mostrarPersonaje('Marta')">
+                <area coords="758,281,689,201" shape="rect"   onclick="mostrarPersonaje('Piloto')">
+
+            </map>
         </div>
-    </div>
 
 
-    <div class="zona zona-calvo" onclick="toggleTexto(this)">
-        <div class="texto">
-            ¿Qué está pasando aquí?
+        <div id="Isma" class="personaje">
+            <img src="../IMG/PIsmaelE2-2.png" alt="Isma">
+            <p>Hola soy Ismael y soy de Murcia...mejor no quieras que pilote el avión...</p>
+            <button onclick="volver()">Volver</button>
         </div>
-    </div>
 
-
-    <div class="zona zona-mujer2" onclick="toggleTexto(this)">
-        <div class="texto">
-            Esto no parece un vuelo normal...
+        <div id="Raul" class="personaje">
+            <img src="../IMG/PRaulE2-2.png" alt="Raúl">
+            <p>Hola soy Raúl...lo siento no se pilotar un avión pero podemos
+                charlar tranquilamente del ultimo partido del Real Madrid y de como Mbappe marco 3 goles de penalti</p>
+            <button onclick="volver()">Volver</button>
         </div>
-    </div>
 
-</div>
+        <div id="Marta" class="personaje">
+            <img src="../IMG/PMartaE2-2.png" alt="Marta">
+            <p>Hola soy Marta y me gusta la programación, desgraciadamente me pongo muy nerviosa a los mandos de un
+                vehículo motorizado por ello solo podre ayudarte
+                con problemas de java y python, y si no mirate los videos de mi
+                compañero Enrique Nogal y hazlo tu en casa</p>
+            <button onclick="volver()">Volver</button>
+        </div>
+        <div id="Piloto" class="personaje">
+              <img src="../IMG/PilotoTripulacion.png" alt="Piloto">
+            <p>	Hola me llamo Leonardo y soy piloto de acrobacias en avioneta yo os puedo ayudar.</p>
+            <button   class="ocultarBoton"   onclick="TiempoPersonajePiloto()">Ir a cabina</button>
+
+        </div>
 </div>
 </body>
+
 </html>
