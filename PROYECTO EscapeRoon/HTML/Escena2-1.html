@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Escape Room - Vuelo al Caribe</title>
@@ -8,47 +9,46 @@
 </head>
 <body>
 
-<div id="animate-area">
-    <div class="escena" id="escena1">
-       
-        <img src="../IMG/PasilloE2-1.png" usemap="#personajes-map" class="imagen-escena" alt="Pasillo avión">
-        
-      
-        <map name="personajes-map">
-      
-            <area shape="rect" coords="670,276,730,376" alt="Isma" onclick="mostrarPersonaje('Isma')">
-            
-           
-            <area shape="rect" coords="250,206,310,306" alt="Raul" onclick="mostrarPersonaje('Raul')">
-            
-            
-            <area shape="rect" coords="138,299,198,399" alt="Marta" onclick="mostrarPersonaje('Marta')">
-            <area shape="rect" coords="" href="" alt="">
-        </map>
-    </div>
+    <div id="animate-area">
+        <div class="escena" id="escena1">
 
-    
-    <div id="Isma" class="personaje">
-        <img src="../IMG/PIsmaelE2-2.png" alt="Isma">
-        <p>Hola soy Ismael y soy de Murcia...mejor no quieras que pilote el avión...</p>
-        <button onclick="volver()">Volver</button>
-    </div>
+            <img src="../IMG/PasilloE2-1.png" usemap="#personajes-map" class="imagen-escena">
 
-    <div id="Raul" class="personaje">
-        <img src="../IMG/PRaulE2-2.png" alt="Raúl">
-        <p>Hola soy Raúl...lo siento no se pilotar un avión pero podemos 
-            charlar tranquilamente del ultimo partido del Real Madrid y de como Mbappe marco 3 goles de penalti</p>
-        <button onclick="volver()">Volver</button>
-    </div>
+            <map name="personajes-map">
 
-    <div id="Marta" class="personaje">
-        <img src="../IMG/PMartaE2-2.png" alt="Marta">
-        <p>Hola soy Marta y me gusta la programación, desgraciadamente me pongo muy nerviosa a los mandos de un vehículo motorizado por ello solo podre ayudarte 
-            con problemas de java y python, y si no mirate los videos de mi 
-            compañero Enrique Nogal y hazlo tu en casa</p>
-        <button onclick="volver()">Volver</button>
+                <area  coords="979,485,855,315" shape="rect" onclick="mostrarPersonaje('Isma')">
+
+                <area  coords="496,401,372,231" shape="rect" onclick="mostrarPersonaje('Raul')">
+
+                <area coords="368,517,203,340"  shape="rect"  onclick="mostrarPersonaje('Marta')">
+
+            </map>
+        </div>
+
+
+        <div id="Isma" class="personaje">
+            <img src="../IMG/PIsmaelE2-2.png" alt="Isma">
+            <p>Hola soy Ismael y soy de Murcia...mejor no quieras que pilote el avión...</p>
+            <button onclick="volver()">Volver</button>
+        </div>
+
+        <div id="Raul" class="personaje">
+            <img src="../IMG/PRaulE2-2.png" alt="Raúl">
+            <p>Hola soy Raúl...lo siento no se pilotar un avión pero podemos
+                charlar tranquilamente del ultimo partido del Real Madrid y de como Mbappe marco 3 goles de penalti</p>
+            <button onclick="volver()">Volver</button>
+        </div>
+
+        <div id="Marta" class="personaje">
+            <img src="../IMG/PMartaE2-2.png" alt="Marta">
+            <p>Hola soy Marta y me gusta la programación, desgraciadamente me pongo muy nerviosa a los mandos de un
+                vehículo motorizado por ello solo podre ayudarte
+                con problemas de java y python, y si no mirate los videos de mi
+                compañero Enrique Nogal y hazlo tu en casa</p>
+            <button onclick="volver()">Volver</button>
+        </div>
     </div>
-</div>
 
 </body>
+
 </html>
